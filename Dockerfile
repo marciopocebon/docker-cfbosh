@@ -6,3 +6,4 @@ RUN wget https://s3.amazonaws.com/bosh-cli-artifacts/bosh-cli-2.0.28-linux-amd64
 RUN curl -sL "https://cli.run.pivotal.io/stable?release=linux64-binary&source=github" | tar -zx && mv cf /usr/local/bin/
 RUN wget https://releases.hashicorp.com/vault/0.7.3/vault_0.7.3_linux_amd64.zip && unzip vault*zip && mv vault /usr/local/bin && rm vault*zip
 RUN wget https://github.com/pivotal-cf/om/releases/download/0.25.0/om-linux && chmod +x om-linux && mv om-linux /usr/local/bin 
+RUN gem install cf-uaac

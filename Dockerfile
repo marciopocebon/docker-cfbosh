@@ -7,3 +7,4 @@ RUN curl -sL "https://cli.run.pivotal.io/stable?release=linux64-binary&source=gi
 RUN wget https://releases.hashicorp.com/vault/0.7.3/vault_0.7.3_linux_amd64.zip && unzip vault*zip && mv vault /usr/local/bin && rm vault*zip
 RUN wget https://github.com/pivotal-cf/om/releases/download/0.25.0/om-linux && chmod +x om-linux && mv om-linux /usr/local/bin 
 RUN gem install cf-uaac
+RUN wget https://github.com/pivotalservices/cf-mgmt/releases/download/v0.0.65/cf-mgmt-linux && chmod +x cf-mgmt-linux && mv cf-mgmt-linux /usr/local/bin/cf-mgmt
